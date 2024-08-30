@@ -5,6 +5,7 @@ Created on Wed Aug 28 11:11:16 2024
 @author: MINH NHUT
 """
 
+import math
 hinh = input("Nhập hình muốn tính chu vi (P) và diện tích (S) (vuông, chữ nhật, tròn): ")
 if hinh == 'vuông':
     canh = float(input("Nhập độ dài cạnh (m): "))
@@ -19,6 +20,6 @@ elif hinh == 'chữ nhật':
     print(f"Chu vi hình chữ nhật là P = {chu_vi} m\nDiện tích hình chữ nhật là S = {dien_tich} m\u00B2")
 else:
     r = float(input("Nhập độ dài bán kính r (m): "))
-    chu_vi = 2 * r * 3.14
-    dien_tich = (r ** 2) * 3.14
+    chu_vi = 2 * r * math.pi
+    dien_tich = (r ** 2) * math.pi
     print(f"Chu vi hình tròn là P = {chu_vi} m\nDiện tích hình tròn là S = {dien_tich} m\u00B2")
